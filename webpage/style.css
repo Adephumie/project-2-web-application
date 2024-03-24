@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.header-container{
+  width: 100%;
+  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  height: 25%;
+  background-color: white;
+  border-bottom: .1px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 rem;
+}
+
+.logo{
+  font-family: 'Satisfy', cursive;
+  font-size: xx-large;
+  padding: .3em;
+}
+
+.logo a{
+  color: black;
+  text-decoration: none;
+}
+
+.nav-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container li{
+  margin: 0 2rem;
+  align-self: center;
+  text-transform: uppercase;
+  font-size: larger;
+  list-style: none;
+}
+
+.nav-container li a{
+  text-decoration: none;
+  color: black;
+}
+
+.cta a{
+  padding: .3em;
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .3);
+}
+
+.cta a:hover{
+  background-color: black;
+  color: white;
+}
+
+.nav-container li a:hover{
+color: blueviolet;
+font-weight: bold;
+}
+
+.hero-container{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./images/laptop2.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-color: rgb(155, 76, 76);
+  color: white;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 50px;
+  gap: 15px;
+  z-index: 1;
+}
+
+.hero-heading h1{
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.hero-cta a{
+  color: white;
+  background-color: black;
+}
+
+.hero-cta a:hover{
+  background-color: white;
+  color: black;
+}
+
+.main-container{
+  box-sizing: border-box;
+  z-index: 0;
+  position: relative;
+  top: 100vh;
+  margin-top: 30px;
+}
+
+img{
+  width: 100%;
+}
+
+#blog-main-heading,
+#products-main-headings{
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.post-wrapper{
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.post{
+  flex: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.picture{
+  flex: 50%;
+}
+
+.product img{
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.products-container{
+display: flex;
+flex-direction: column;
+}
+
+.product-wrapper{
+  margin-bottom: 30px;
+  border-bottom: .1px solid black;
+}
+
+.cta-products input{
+  width: 60%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cta-products input:hover{
+  background-color: white;
+  color: black;
+}
+
+.cta-products{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
